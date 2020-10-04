@@ -8,7 +8,7 @@ class Diary
 
   def add_appointment(appointment)
     raise "You're not free at that time" if not_free?(appointment)
-    appointments.push(appointment)
+    @appointments.push(appointment)
   end
 
   private
