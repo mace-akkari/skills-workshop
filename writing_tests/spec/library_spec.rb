@@ -16,4 +16,5 @@ describe Library do
   it 'can list all the books on a specific subject' do
     expect(subject.all_books_by_subject('JS')).to include ({title: 'Eloquent JavaScript', author: 'Marijn Haverbeke', subject: 'JS'}.to_h)
   end
+  
 end
