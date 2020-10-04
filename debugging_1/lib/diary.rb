@@ -8,12 +8,12 @@ class Diary
 
   def add_appointment(appointment)
     raise "You're not free at that time" if not_free?(appointment)
-    @appointments.push(appointment)
+    appointments.push(appointment)
   end
 
   private
 
   def not_free?(appointment)
-    appointments.map(&:time).includes? appointment.time
+    appointments.map(&:time).include? appointment.time
   end
 end
